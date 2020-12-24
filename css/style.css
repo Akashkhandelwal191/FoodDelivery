@@ -1,0 +1,289 @@
+/* CSS reset */
+*{
+   margin: 0;
+   padding: 0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+#loader h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    color:black;
+    font-family: cursive;
+    
+
+}
+#loader
+{
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background: #fff
+    url("http://www.squidlipsgrill.com/wp-content/themes/priority/images/loader.gif") no-repeat center;
+    z-index: 99999;
+}
+
+
+/* Navigation Bar */
+#navbar{
+     margin:0;    
+     display: flex; 
+    align-items: center; 
+    /* position: relative; */
+    position: sticky;
+    width:100%;
+    top:0px;
+}
+/* Navigation bar :logo and image */
+#logo{
+
+    margin: 10px 34px;
+}
+
+#logo img{
+    margin: 3px 6px;
+    height: 59px
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 1.0;
+
+}
+#navbar ul li{
+
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    background:url(../Save3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h2
+{
+    margin-left: -40px;
+    
+}
+#home h1
+{
+    /* color:#00b894; */
+    color:white;
+    text-align: center;
+    text-shadow: 24px 9px 35px currentColor;
+    margin-left: -100px;
+}    
+#home p
+{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+/* Utility Class */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    text-shadow: 2px 1px 5px white;
+    transition: all 2s ease-in-out;
+}
+.btn:hover{
+    background-color:white;
+    color:black;
+    border-radius: 21px;
+}
+
+.change_content:after{
+
+   content:'';
+   animation: changetext 8s infinite linear;
+   
+   color:yellow;
+}
+@keyframes changetext{
+   0%{content: "Non-Veg Food";}
+   15%{ content: "Junk Food"; }
+   25%{ content: "Tamil Food"; }
+   75%{ content: "South Food"; }
+   100%{ content: "Veg Food"; }
+
+}
+
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+.services-container h1
+{
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.h-unique
+{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    text-align: center;
+    padding: 90px;
+}
+
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 10px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+
+.btn2{
+
+    margin-left: 230px;
+}
